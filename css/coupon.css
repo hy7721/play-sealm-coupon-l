@@ -8,41 +8,31 @@
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/NotoSansCJKkr-Light.woff2") format("woff2"),
-      url("../fonts/NotoSansCJKkr-Light.ttf") format("truetype"),
-      url("../fonts/NotoSansCJKkr-Light.otf") format("opentype");
+  src: url('../fonts/NotoSansCJKkr-Light.woff2') format('woff2'), url('../fonts/NotoSansCJKkr-Light.ttf') format('truetype'), url('../fonts/NotoSansCJKkr-Light.otf') format('opentype');
 }
 @font-face {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/NotoSansCJKkr-Regular.woff2") format("woff2"),
-      url("../fonts/NotoSansCJKkr-Regular.ttf") format("truetype"),
-      url("../fonts/NotoSansCJKkr-Regular.otf") format("opentype");
+  src: url('../fonts/NotoSansCJKkr-Regular.woff2') format('woff2'), url('../fonts/NotoSansCJKkr-Regular.ttf') format('truetype'), url('../fonts/NotoSansCJKkr-Regular.otf') format('opentype');
 }
 @font-face {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/NotoSansCJKkr-Medium.woff2") format("woff2"),
-      url("../fonts/NotoSansCJKkr-Medium.ttf") format("truetype"),
-      url("../fonts/NotoSansCJKkr-Medium.otf") format("opentype");
+  src: url('../fonts/NotoSansCJKkr-Medium.woff2') format('woff2'), url('../fonts/NotoSansCJKkr-Medium.ttf') format('truetype'), url('../fonts/NotoSansCJKkr-Medium.otf') format('opentype');
 }
 @font-face {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/NotoSansCJKkr-Bold.woff2") format("woff2"),
-  url("../fonts/NotoSansCJKkr-Bold.ttf") format("truetype"),
-  url("../fonts/NotoSansCJKkr-Bold.otf") format("opentype");
+  src: url('../fonts/NotoSansCJKkr-Bold.woff2') format('woff2'), url('../fonts/NotoSansCJKkr-Bold.ttf') format('truetype'), url('../fonts/NotoSansCJKkr-Bold.otf') format('opentype');
 }
 @font-face {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 900;
-  src: url("../fonts/NotoSansCJKkr-Black.woff2") format("woff2"),
-      url("../fonts/NotoSansCJKkr-Black.ttf") format("truetype"),
-      url("../fonts/NotoSansCJKkr-Black.otf") format("opentype");
+  src: url('../fonts/NotoSansCJKkr-Black.woff2') format('woff2'), url('../fonts/NotoSansCJKkr-Black.ttf') format('truetype'), url('../fonts/NotoSansCJKkr-Black.otf') format('opentype');
 }
 
 
@@ -95,9 +85,11 @@ body {
   position:relative;
   width:100%;
   height:100%;
-  -webkit-text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
   text-size-adjust: none;
   font-size: 16px;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
@@ -156,7 +148,8 @@ select:focus {
 }
 
 input:checked[type=checkbox] {
-  -webkit-appearance: checkbox; 
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox; 
   appearance: checkbox;
 }
 
@@ -242,35 +235,50 @@ a[href^=tel] {
   color: inherit;
 }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  font-size: 16px;
+::-webkit-input-placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -1px;
   color: #CCC;
+  background-color: #FFF;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
-::-moz-placeholder { /* Firefox 19+ */
-  font-size: 16px;
+::-moz-placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -1px;
   color: #CCC;
+  background-color: #FFF;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
-:-ms-input-placeholder { /* IE 10+ */
-  font-size: 16px;
+:-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -1px;
   color: #CCC;
+  background-color: #FFF;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
-:-moz-placeholder { /* Firefox 18- */
-  font-size: 16px;
+:-moz-placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -1px;
   color: #CCC;
+  background-color: #FFF;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
 ::placeholder {
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -1px;
   color: #CCC;
+  background-color: #FFF;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
 
-/* IE에서 br 태그 이슈 대응 */
 br {
-  font-family: 'Dotum';
+  line-height: 1;
+  font-family: 'Dotum'; /* IE에서 br 태그 이슈 대응 */
 }
 
 
@@ -344,36 +352,36 @@ br {
 @media (orientation: portrait) and (min-height: 800px) {
   #mMain {
     overflow: hidden;
-    display: -webkit-box; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-    display: -moz-box; /* Firefox 19- */
-    display: -ms-flexbox; /* IE10 */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    -ms-flex-direction: column; /* IE10 */
-    -webkit-flex-direction: column; /* Chrome */
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: center; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-    -moz-box-align: center; /* Firefox 19- */
-    -ms-flex-align: center; /* IE10 */
-    -webkit-align-items: center; /* IE10 */
-    align-items: center; /* Chrome */
-    -webkit-box-pack: center; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-    -moz-box-pack: center; /* Firefox 19- */
-    -ms-flex-pack: center; /* IE10 */
-    -webkit-justify-content: center; /* IE10 */
-    justify-content: center; /* Chrome */
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
     height: 100vh;
   }
 }
 @media (orientation: landscape) {
   #mMain {
-    display: -webkit-box; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-    display: -moz-box; /* Firefox 19- */
-    display: -ms-flexbox; /* IE10 */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    -ms-flex-direction: row; /* IE10 */
-    -webkit-flex-direction: row; /* Chrome */
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
     flex-direction: row;
   }
 }
@@ -387,19 +395,20 @@ br {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 @media (orientation: landscape) {
   .inner_p {
     position: relative;
-    display: -webkit-box; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-    display: -moz-box; /* Firefox 19- */
-    display: -ms-flexbox; /* IE10 */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    -webkit-box-align: center; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-    -moz-box-align: center; /* Firefox 19- */
-    -ms-flex-align: center; /* IE10 */
-    -webkit-align-items: center; /* IE10 */
-    align-items: center; /* Chrome */
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
     height: 100vh;
   }
 }
@@ -420,19 +429,19 @@ br {
 @media (orientation: landscape) {
   .wrap_coupon {
     position: relative;
-    display: -webkit-box; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-    display: -moz-box; /* Firefox 19- */
-    display: -ms-flexbox; /* IE10 */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    -webkit-box-align: center; /* Android 2.1 ~ 4.3, ios 6-, safari 3.1-6 */
-    -moz-box-align: center; /* Firefox 19- */
-    -ms-flex-align: center; /* IE10 */
-    -webkit-align-items: center; /* IE10 */
-    align-items: center; /* Chrome */
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
     width: 100%;
     max-width: 640px;
-    max-height: 482px;
+    max-height: 460px;
   }
 }
 
@@ -450,7 +459,7 @@ br {
 
   .cont_coupon_02 {
     position: absolute;
-    width: calc(100% - 172px);
+    width: calc(100% - 170px);
     max-width: 468px;
     max-height: 482px;
     top: 0;
@@ -472,11 +481,18 @@ br {
 .tit_coupon {
   display: block;
   margin-top: 14px;
-  font-size: 22px;
+  margin-bottom: 14px;
+  font-size: 20px;
   font-weight: 900;
-  line-height: 22px;
+  line-height: 20px;
   letter-spacing: -0.8px;
   color: #333;
+}
+
+@media (orientation: landscape) {
+  .tit_coupon {
+    margin-bottom: 0;
+  }
 }
 
 .txt_coupon {
@@ -501,44 +517,45 @@ br {
 .input_txt {
   position: relative; 
   width: 100%;
-  padding: 14px 0;
-  font-size: 16px;
+  padding: 12px 0;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 1;
+  line-height: 14px;
   color: #333;
 }
 
-.input_txt::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  font-size: 16px;
+.input_txt::-webkit-input-placeholder {
+  font-size: 14px;
   color: #CCC;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
-.input_txt::-moz-input-placeholder { /* Firefox 19+ */
-  font-size: 16px;
+.input_txt::-moz-input-placeholder {
+  font-size: 14px;
   color: #CCC;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
-.input_txt:-ms-input-placeholder { /* IE 10+ */
-  font-size: 16px;
+.input_txt:-ms-input-placeholder {
+  font-size: 14px;
   color: #CCC !important;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
-.input_txt:-moz-placeholder { /* Firefox 18- */
-  font-size: 16px;
+.input_txt:-moz-placeholder {
+  font-size: 14px;
   color: #CCC;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
 .input_txt::placeholder {
-  font-size: 16px;
+  font-size: 14px;
   color: #CCC;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
 
 .input_select {
   width: 100%;
-  padding: 14px 0;
-  font-size: 16px;
+  padding: 12px 0;
+  font-size: 14px;
   font-weight: 500;
+  line-height: 20px;
   color: #333;
   background: url(../images/img_select.png) no-repeat 98.6% 54.9%;
   background-size: 11px 7px;
@@ -548,20 +565,20 @@ br {
   position: relative;
   width: 100%;
   margin: 0 auto;
-  padding: 22px 0 28px 0;
+  padding: 20px 0 26px 0;
   text-align: center;
 }
 
 .btn_confirm {
   display: block;
   width: 100%;
-  height: 50px;
+  height: 46px;
   padding: 16px 0;
   border-radius: 5px;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: -0.8px;
-  line-height: 1;
+  line-height: 14px;
   text-align: center;
   color: #FFF;
   background-color: #5498DA;
@@ -573,7 +590,7 @@ br {
 
 .wrap_assist {
   margin-bottom: 30px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   letter-spacing: -0.8px;
   text-align: left;
@@ -594,6 +611,19 @@ br {
   line-height: 1;
   text-align: center;
   background-color: #FFF;
+}
+
+@media (orientation: portrait) and (max-width: 769px) {
+  .wrap_footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
 }
 
 @media (orientation: landscape) {
@@ -639,7 +669,7 @@ br {
 }
 
 .txt_popup {
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: -0.8px;
   color: #494949;
 }
@@ -652,7 +682,7 @@ br {
   padding: 0 10px;
   border: 1px solid #0070C0;
   border-radius: 8px;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: -0.8px;
   color: #FFF;
   background-color: #0070C0;
