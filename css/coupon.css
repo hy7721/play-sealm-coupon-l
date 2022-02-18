@@ -320,6 +320,7 @@ br {
   height: 4px;
   margin-right: 4px;
   margin-bottom: 4px;
+  border-radius: 50%;
   background: url(../images/img_dot.png) center center no-repeat;
 }
 
