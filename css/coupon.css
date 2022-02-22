@@ -112,7 +112,6 @@ q,
 blockquote {
   quotes: none;
 }
-
 q:before,
 q:after,
 blockquote:before,
@@ -133,18 +132,6 @@ select,
 textarea {
   vertical-align: middle;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
-}
-
-table {
-  border: 0 none;
-  border-collapse: collapse;
-  border-spacing: 0;
-  vertical-align: baseline;
-}
-
-input:focus,
-select:focus {
-  outline: none;
 }
 
 input:checked[type=checkbox] {
@@ -174,16 +161,9 @@ input[type=search]::-webkit-search-cancel-button {
   appearance: none;
 }
 
-textarea {
-  border: 0 none;
+input:focus,
+select:focus {
   outline: none;
-  resize: none;
-  background-color: transparent;
-  font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
-}
-
-label {
-  cursor: pointer;
 }
 
 select {
@@ -199,6 +179,25 @@ select {
 }
 select::-ms-expand {
   display: none;
+}
+
+textarea {
+  border: 0 none;
+  outline: none;
+  resize: none;
+  background-color: transparent;
+  font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+}
+
+table {
+  border: 0 none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  vertical-align: baseline;
+}
+
+label {
+  cursor: pointer;
 }
 
 label,
@@ -311,9 +310,9 @@ br {
   -webkit-box-orient: vertical;
 }
 
-[class*="ico_"] {
+[class^="ico_"] {
   display: inline-block;
-} 
+}
 
 .ico_dot {
   width: 4px;
@@ -350,7 +349,7 @@ br {
   background-color: #FFF;
 }
 
-@media (orientation: portrait) and (min-height: 800px) {
+@media screen and (orientation: portrait) and (min-height: 800px) {
   #mMain {
     overflow: hidden;
     display: -webkit-box;
@@ -374,7 +373,8 @@ br {
     height: 100vh;
   }
 }
-@media (orientation: landscape) {
+
+@media screen and (orientation: landscape) {
   #mMain {
     display: -webkit-box;
     display: -moz-box;
@@ -397,7 +397,7 @@ br {
   box-sizing: border-box;
 }
 
-@media (orientation: landscape) {
+@media screen and (orientation: landscape) {
   .inner_p {
     position: relative;
     display: -webkit-box;
@@ -424,10 +424,10 @@ br {
 @media screen and (orientation: portrait) {
   .wrap_coupon {
     max-width: 360px;
-    margin: auto;
   }
 }
-@media (orientation: landscape) {
+
+@media screen and (orientation: landscape) {
   .wrap_coupon {
     position: relative;
     display: -webkit-box;
@@ -450,9 +450,27 @@ br {
   text-align: center;
 }
 
-@media (orientation: landscape) {
+@media screen and (orientation: landscape) {
   .cont_coupon_01 {
     position: fixed;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
     max-width: 170px;
     max-height: 220px;
     background-color: #FFF;
@@ -469,6 +487,7 @@ br {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    background-color: #FFF;
   }
 }
 
@@ -484,13 +503,13 @@ br {
   margin-top: 14px;
   margin-bottom: 14px;
   font-size: 20px;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.8px;
   color: #333;
 }
 
-@media (orientation: landscape) {
+@media screen and (orientation: landscape) {
   .tit_coupon {
     margin-bottom: 0;
   }
@@ -590,8 +609,8 @@ br {
 }
 
 .wrap_assist {
-  margin-bottom: 30px;
-  font-size: 13px;
+  margin-bottom: 26px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: -0.8px;
   text-align: left;
@@ -600,7 +619,7 @@ br {
   color: #56585B;
 }
 .wrap_assist li + li {
-  margin-top: 8px;
+  margin-top: 5px;
 }
 
 .wrap_footer {
@@ -614,7 +633,7 @@ br {
   background-color: #FFF;
 }
 
-@media (orientation: portrait) and (max-width: 769px) {
+@media screen and (orientation: portrait) and (max-width: 769px) {
   .wrap_footer {
     position: fixed;
     bottom: 0;
@@ -627,7 +646,7 @@ br {
   }
 }
 
-@media (orientation: landscape) {
+@media screen and (orientation: landscape) {
   .wrap_footer {
     padding-top: 0;
   }
@@ -641,8 +660,8 @@ br {
 
 .wrap_popup {
   z-index: 7721;
-  display: none;
   position: fixed;
+  display: none;
   width: 100%;
   height: 100%;
   top: 0;
@@ -696,8 +715,8 @@ br {
 
 .wrap_dimmed {
   z-index: 64;
-  display: block;
   position: fixed;
+  display: block;
   width: 100%;
   height: 100%;
   top: 0;
