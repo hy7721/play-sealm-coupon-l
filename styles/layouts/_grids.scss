@@ -1,0 +1,51 @@
+$margin: 20px;
+
+@media screen and (orientation: portrait) {
+  .wrap_coupon {
+    @include column-flexbox(center, center);
+    max-width: $pt-breakpoint;
+  }
+
+  .cont_coupon_01,
+  .cont_coupon_02 {
+    position: relative;
+    width: 100%;
+    max-width: 360px;
+  }
+}
+
+@media screen and (orientation: portrait) and (min-height: 800px) {
+  #mMain {
+    @include column-flexbox;
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+@media screen and (orientation: portrait) and (max-width: 769px) {
+  .wrap_footer {
+    @include pos-center-x;
+  }
+}
+
+#mMain {
+  @include flexbox;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+}
+
+.inner_p {
+  @include flexbox;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.wrap_footer {
+  position: relative;
+  padding-top: 26px;
+  padding-bottom: 20px;
+}

@@ -1,0 +1,34 @@
+.wrap_coupon {
+  @include flexbox(between, center);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: $ls-breakpoint;
+  max-height: 445px;
+}
+
+.cont_coupon_01 {
+  @include column-flexbox;
+  position: fixed;
+  max-width: $c1-breakpoint;
+  max-height: 140px;
+  margin: $margin;
+
+  .img_logo {
+    display: block;
+    width: $c1-breakpoint;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+.cont_coupon_02 {
+  @include column-flexbox(center, stretch);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(100% - 170px);
+  max-width: $c2-breakpoint;
+  padding-left: 52px;
+  margin: $margin;
+}

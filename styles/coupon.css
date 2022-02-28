@@ -8,34 +8,42 @@
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 300;
-  src: url('../fonts/NotoSansCJKkr-Light.woff2') format('woff2'), url('../fonts/NotoSansCJKkr-Light.ttf') format('truetype'), url('../fonts/NotoSansCJKkr-Light.otf') format('opentype');
+  src: url('../fonts/NotoSansCJKkr-Light.woff2') format('woff2'),
+    url('../fonts/NotoSansCJKkr-Light.ttf') format('truetype'),
+    url('../fonts/NotoSansCJKkr-Light.otf') format('opentype');
 }
 @font-face {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/NotoSansCJKkr-Regular.woff2') format('woff2'), url('../fonts/NotoSansCJKkr-Regular.ttf') format('truetype'), url('../fonts/NotoSansCJKkr-Regular.otf') format('opentype');
+  src: url('../fonts/NotoSansCJKkr-Regular.woff2') format('woff2'),
+    url('../fonts/NotoSansCJKkr-Regular.ttf') format('truetype'),
+    url('../fonts/NotoSansCJKkr-Regular.otf') format('opentype');
 }
 @font-face {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/NotoSansCJKkr-Medium.woff2') format('woff2'), url('../fonts/NotoSansCJKkr-Medium.ttf') format('truetype'), url('../fonts/NotoSansCJKkr-Medium.otf') format('opentype');
+  src: url('../fonts/NotoSansCJKkr-Medium.woff2') format('woff2'),
+    url('../fonts/NotoSansCJKkr-Medium.ttf') format('truetype'),
+    url('../fonts/NotoSansCJKkr-Medium.otf') format('opentype');
 }
 @font-face {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/NotoSansCJKkr-Bold.woff2') format('woff2'), url('../fonts/NotoSansCJKkr-Bold.ttf') format('truetype'), url('../fonts/NotoSansCJKkr-Bold.otf') format('opentype');
+  src: url('../fonts/NotoSansCJKkr-Bold.woff2') format('woff2'),
+    url('../fonts/NotoSansCJKkr-Bold.ttf') format('truetype'),
+    url('../fonts/NotoSansCJKkr-Bold.otf') format('opentype');
 }
 @font-face {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 900;
-  src: url('../fonts/NotoSansCJKkr-Black.woff2') format('woff2'), url('../fonts/NotoSansCJKkr-Black.ttf') format('truetype'), url('../fonts/NotoSansCJKkr-Black.otf') format('opentype');
+  src: url('../fonts/NotoSansCJKkr-Black.woff2') format('woff2'),
+    url('../fonts/NotoSansCJKkr-Black.ttf') format('truetype'),
+    url('../fonts/NotoSansCJKkr-Black.otf') format('opentype');
 }
-
-
 
 /* ---------------------------------------------------------------------------------
   reset.css
@@ -76,15 +84,15 @@ td,
 input,
 select,
 button {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 html,
 body {
-  position:relative;
-  width:100%;
-  height:100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: none;
@@ -134,20 +142,20 @@ textarea {
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
 
-input:checked[type=checkbox] {
+input:checked[type='checkbox'] {
   -webkit-appearance: checkbox;
-  -moz-appearance: checkbox; 
+  -moz-appearance: checkbox;
   appearance: checkbox;
 }
 
-input[type=text],
-input[type=password],
-input[type=submit],
-input[type=search],
-input[type=tel],
-input[type=email],
-input[type=button],
-input[type=reset] {
+input[type='text'],
+input[type='password'],
+input[type='submit'],
+input[type='search'],
+input[type='tel'],
+input[type='email'],
+input[type='button'],
+input[type='reset'] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -155,7 +163,7 @@ input[type=reset] {
   border-radius: 0;
 }
 
-input[type=search]::-webkit-search-cancel-button {
+input[type='search']::-webkit-search-cancel-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -229,7 +237,7 @@ a:link,
 a:visited {
   text-decoration: none;
 }
-a[href^=tel] {
+a[href^='tel'] {
   text-decoration: inherit;
   color: inherit;
 }
@@ -238,40 +246,40 @@ a[href^=tel] {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: -1px;
-  color: #CCC;
-  background-color: #FFF;
+  color: #ccc;
+  background-color: #fff;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
 ::-moz-placeholder {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: -1px;
-  color: #CCC;
-  background-color: #FFF;
+  color: #ccc;
+  background-color: #fff;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
 :-ms-input-placeholder {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: -1px;
-  color: #CCC;
-  background-color: #FFF;
+  color: #ccc;
+  background-color: #fff;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
 :-moz-placeholder {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: -1px;
-  color: #CCC;
-  background-color: #FFF;
+  color: #ccc;
+  background-color: #fff;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
 ::placeholder {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: -1px;
-  color: #CCC;
-  background-color: #FFF;
+  color: #ccc;
+  background-color: #fff;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
 
@@ -279,8 +287,6 @@ br {
   line-height: 1;
   font-family: 'Dotum'; /* IE에서 br 태그 이슈 대응 */
 }
-
-
 
 /* ---------------------------------------------------------------------------------
   common.css
@@ -310,7 +316,7 @@ br {
   -webkit-box-orient: vertical;
 }
 
-[class^="ico_"] {
+[class^='ico_'] {
   display: inline-block;
 }
 
@@ -322,8 +328,6 @@ br {
   border-radius: 50%;
   background: url(../images/img_dot.png) center center no-repeat;
 }
-
-
 
 /* ---------------------------------------------------------------------------------
   style.css
@@ -338,7 +342,7 @@ br {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 16px;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 #mMain {
@@ -346,7 +350,7 @@ br {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 @media screen and (orientation: portrait) and (min-height: 800px) {
@@ -390,7 +394,7 @@ br {
 .inner_p {
   position: relative;
   width: 100%;
-  margin: 0 auto; 
+  margin: 0 auto;
   padding: 20px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -473,7 +477,7 @@ br {
     justify-content: center;
     max-width: 170px;
     max-height: 220px;
-    background-color: #FFF;
+    background-color: #fff;
   }
 
   .cont_coupon_02 {
@@ -487,7 +491,7 @@ br {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    background-color: #FFF;
+    background-color: #fff;
   }
 }
 
@@ -496,7 +500,7 @@ br {
   width: 170px;
   height: auto;
   margin: 0 auto;
-} 
+}
 
 .tit_coupon {
   display: block;
@@ -531,11 +535,11 @@ br {
 .wrap_input {
   overflow: hidden;
   width: 100%;
-  border-bottom: 1px solid #EBEBEB;
+  border-bottom: 1px solid #ebebeb;
 }
 
 .input_txt {
-  position: relative; 
+  position: relative;
   width: 100%;
   padding: 12px 0;
   font-size: 14px;
@@ -546,27 +550,27 @@ br {
 
 .input_txt::-webkit-input-placeholder {
   font-size: 14px;
-  color: #CCC;
+  color: #ccc;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
 .input_txt::-moz-input-placeholder {
   font-size: 14px;
-  color: #CCC;
+  color: #ccc;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
 .input_txt:-ms-input-placeholder {
   font-size: 14px;
-  color: #CCC !important;
+  color: #ccc !important;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
 .input_txt:-moz-placeholder {
   font-size: 14px;
-  color: #CCC;
+  color: #ccc;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
 .input_txt::placeholder {
   font-size: 14px;
-  color: #CCC;
+  color: #ccc;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
 }
 
@@ -600,8 +604,8 @@ br {
   letter-spacing: -0.8px;
   line-height: 14px;
   text-align: center;
-  color: #FFF;
-  background-color: #5498DA;
+  color: #fff;
+  background-color: #5498da;
 }
 .btn_confirm:hover,
 .btn_confirm:focus {
@@ -616,7 +620,7 @@ br {
   text-align: left;
   -ms-word-break: break-all;
   word-break: break-all;
-  color: #56585B;
+  color: #56585b;
 }
 .wrap_assist li + li {
   margin-top: 5px;
@@ -630,7 +634,7 @@ br {
   padding-bottom: 20px;
   line-height: 1;
   text-align: center;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 @media screen and (orientation: portrait) and (max-width: 769px) {
@@ -655,7 +659,7 @@ br {
 .txt_copyright {
   font-size: 12px;
   line-height: 12px;
-  color: #85878A;
+  color: #85878a;
 }
 
 .wrap_popup {
@@ -685,7 +689,7 @@ br {
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   text-align: center;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .txt_popup {
@@ -701,12 +705,12 @@ br {
   height: 28px;
   margin-top: 15px;
   padding: 0 10px;
-  border: 1px solid #0070C0;
+  border: 1px solid #0070c0;
   border-radius: 8px;
   font-size: 12px;
   letter-spacing: -0.8px;
-  color: #FFF;
-  background-color: #0070C0;
+  color: #fff;
+  background-color: #0070c0;
 }
 .btn_okay:hover,
 .btn_okay:focus {
