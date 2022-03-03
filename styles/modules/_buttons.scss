@@ -10,15 +10,36 @@
   border-radius: 5px;
 }
 
-.btn_confirm {
-  @extend %btn-base;
-  background-color: $blue;
-}
-
 .wrap_btn {
   position: relative;
   width: 100%;
   padding: 20px 0 26px 0;
   margin: 0 auto;
   text-align: center;
+}
+
+.btn_confirm {
+  @extend %btn-base;
+  background-color: $blue;
+}
+
+.btn_okay {
+  @include text-style-12;
+
+  width: auto;
+  height: 28px;
+  max-width: 200px;
+  min-width: 80px;
+  padding: 0 10px;
+  margin-top: 15px;
+  letter-spacing: $letter-spacing-8;
+  color: $white;
+  background-color: $blue;
+  border: 1px solid $blue;
+  border-radius: 8px;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
 }

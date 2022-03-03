@@ -282,6 +282,125 @@ br {
   color: #88898c;
   text-align: center; }
 
+.txt_popup {
+  font-size: 0.857em;
+  font-weight: 500;
+  letter-spacing: -0.057em;
+  color: #56585b; }
+
+#mMain {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  background-color: #fff; }
+
+.inner_p {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto; }
+
+.wrap_coupon {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 678px;
+  max-height: 445px; }
+
+.cont_coupon_01 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  max-width: 170px;
+  min-height: 140px;
+  margin: 20px; }
+  .cont_coupon_01 .img_logo {
+    display: block;
+    width: 170px;
+    height: auto;
+    margin: 0 auto; }
+
+.cont_coupon_02 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(100% - 170px);
+  max-width: 468px;
+  padding-left: 52px;
+  margin: 20px; }
+
+@media screen and (orientation: portrait) {
+  .wrap_coupon {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 360px;
+    min-height: 640px; }
+  .cont_coupon_01,
+  .cont_coupon_02 {
+    position: relative;
+    width: 100%; }
+  .cont_coupon_02 {
+    padding: 0 20px; } }
+
+@media screen and (orientation: portrait) and (min-height: 800px) {
+  #mMain {
+    height: 100vh;
+    overflow: hidden; } }
+
+@media screen and (orientation: portrait) and (max-width: 359px) {
+  .cont_coupon_01 {
+    margin-top: 140px; } }
+
+.wrap_footer {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0;
+  color: #88898c;
+  background-color: #f4f5f7; }
+
 .btn_confirm {
   display: -webkit-inline-box;
   display: -moz-inline-box;
@@ -297,15 +416,32 @@ br {
   text-align: center;
   border-radius: 5px; }
 
-.btn_confirm {
-  background-color: #5498da; }
-
 .wrap_btn {
   position: relative;
   width: 100%;
   padding: 20px 0 26px 0;
   margin: 0 auto;
   text-align: center; }
+
+.btn_confirm {
+  background-color: #5498da; }
+
+.btn_okay {
+  font-size: 0.857em;
+  font-weight: 500;
+  width: auto;
+  height: 28px;
+  max-width: 200px;
+  min-width: 80px;
+  padding: 0 10px;
+  margin-top: 15px;
+  letter-spacing: -0.057em;
+  color: #fff;
+  background-color: #5498da;
+  border: 1px solid #5498da;
+  border-radius: 8px; }
+  .btn_okay:hover, .btn_okay:focus {
+    cursor: pointer; }
 
 .ico_dot {
   display: inline-block; }
@@ -338,112 +474,37 @@ br {
   background: url("/images/img_select.png") 98.6% 54.9% no-repeat;
   background-size: 11px 7px; }
 
-@media screen and (orientation: portrait) {
-  .wrap_coupon {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 360px; }
-  .cont_coupon_01,
-  .cont_coupon_02 {
-    position: relative;
-    width: 100%;
-    max-width: 360px; } }
-
-@media screen and (orientation: portrait) and (min-height: 800px) {
-  #mMain {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden; } }
-
-@media screen and (orientation: portrait) and (max-width: 769px) {
-  .wrap_footer {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%); } }
-
-#mMain {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  width: 100%;
-  height: 100%;
-  background-color: #fff; }
-
-.inner_p {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  margin: 0 auto; }
-
-.wrap_footer {
-  position: relative;
-  padding-top: 26px;
-  padding-bottom: 20px; }
-
-.wrap_coupon {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  max-width: 678px;
-  max-height: 445px; }
-
-.cont_coupon_01 {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.wrap_popup {
   position: fixed;
-  max-width: 170px;
-  max-height: 140px;
-  margin: 20px; }
-  .cont_coupon_01 .img_logo {
-    display: block;
-    width: 170px;
-    height: auto;
-    margin: 0 auto; }
-
-.cont_coupon_02 {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: center;
-  position: absolute;
   top: 0;
-  right: 0;
-  width: calc(100% - 170px);
-  max-width: 468px;
-  padding-left: 52px;
-  margin: 20px; }
+  left: 0;
+  z-index: 7721;
+  display: none;
+  width: 100%;
+  height: 100%; }
+
+.cont_popup {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 721;
+  width: 100%;
+  max-width: 300px;
+  min-height: 100px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 27px 43px 43px -26px rgba(89, 89, 89, 0.39); }
+
+.wrap_dimmed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 64;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); }

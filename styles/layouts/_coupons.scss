@@ -1,3 +1,22 @@
+$margin: 20px;
+
+#mMain {
+  @include flexbox;
+  position: relative;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+}
+
+.inner_p {
+  @include flexbox;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
 .wrap_coupon {
   @include flexbox(between, center);
   position: relative;
@@ -11,7 +30,7 @@
   @include column-flexbox;
   position: fixed;
   max-width: $c1-breakpoint;
-  max-height: 140px;
+  min-height: 140px;
   margin: $margin;
 
   .img_logo {
@@ -31,4 +50,54 @@
   max-width: $c2-breakpoint;
   padding-left: 52px;
   margin: $margin;
+}
+
+@media screen and (orientation: portrait) {
+  .wrap_coupon {
+    @include column-flexbox;
+    max-width: $pt-breakpoint;
+    min-height: 640px;
+  }
+
+  .cont_coupon_01,
+  .cont_coupon_02 {
+    position: relative;
+    width: 100%;
+  }
+
+  .cont_coupon_02 {
+    padding: 0 20px;
+  }
+}
+
+// @media screen and (orientation: portrait) and (min-height: 680px) {
+//   .wrap_footer {
+//     position: fixed !important;
+//     bottom: 0 !important;
+//     width: 100% !important;
+//     background-color: $white;
+//   }
+// }
+
+@media screen and (orientation: portrait) and (min-height: 800px) {
+  #mMain {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+@media screen and (orientation: portrait) and (max-width: 359px) {
+  .cont_coupon_01 {
+    margin-top: 140px;
+  }
+}
+
+.wrap_footer {
+  @include flexbox;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0;
+  color: $tertiary;
+  background-color: $light-grey;
 }
