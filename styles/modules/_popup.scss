@@ -9,7 +9,7 @@
 }
 
 .cont_popup {
-  @include pos-center-y;
+  @include pos-center;
   position: fixed;
   top: 50%;
   left: 50%;

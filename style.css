@@ -350,7 +350,7 @@ br {
   display: -ms-flexbox;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
   justify-content: center;
   position: absolute;
   top: 0;
@@ -380,10 +380,9 @@ br {
 
 @media screen and (orientation: portrait) and (min-height: 800px) {
   #mMain {
-    height: 100vh;
-    overflow: hidden; } }
+    height: 100vh; } }
 
-@media screen and (orientation: portrait) and (max-width: 359px) {
+@media screen and (orientation: portrait) and (max-width: 360px) {
   .cont_coupon_01 {
     margin-top: 140px; } }
 
@@ -394,12 +393,13 @@ br {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
-  padding: 20px 0;
-  color: #88898c;
-  background-color: #f4f5f7; }
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  color: #88898c; }
 
 .btn_confirm {
   display: -webkit-inline-box;
@@ -486,7 +486,8 @@ br {
 .cont_popup {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   position: fixed;
   top: 50%;
   left: 50%;
