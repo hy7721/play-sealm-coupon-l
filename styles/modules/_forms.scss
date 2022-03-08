@@ -1,0 +1,21 @@
+%form-base {
+  position: relative;
+  padding: 12px 0;
+}
+
+.wrap_input {
+  width: 100%;
+  overflow: hidden;
+  background-color: $white;
+  border-bottom: 1px solid $border;
+}
+
+.input_select {
+  @include text-style-14;
+  @extend %form-base;
+  width: 100%;
+  line-height: $line-height-20;
+  color: $primary;
+  background: url('/images/img_select.png') 98.6% 54.9% no-repeat;
+  background-size: 11px 7px;
+}
