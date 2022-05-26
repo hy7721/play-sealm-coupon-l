@@ -1,0 +1,65 @@
+@mixin text-style-title {
+  font-size: $font-size-18;
+  font-weight: 700;
+  line-height: $line-height-20;
+  letter-spacing: $letter-spacing-4;
+}
+
+@mixin text-style-12 {
+  font-size: $font-size-12;
+  font-weight: 500;
+}
+
+@mixin text-style-14 {
+  font-size: $font-size-14;
+  font-weight: 500;
+  line-height: $line-height-14;
+}
+
+.tit_coupon {
+  @include text-style-title;
+  display: inline-block;
+  margin-top: 14px;
+}
+
+.txt_input {
+  @include text-style-14;
+  @extend %form-base;
+  width: 100%;
+  color: $primary;
+
+  &::-webkit-input-placeholder {
+    font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+    font-size: $font-size-14;
+    color: $grey;
+  }
+
+  &:moz-input-placeholder {
+    font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+    font-size: $font-size-14;
+    color: $grey;
+  }
+}
+
+.txt_assist {
+  @include text-style-12;
+  display: inline;
+  line-height: $line-height-12;
+  letter-spacing: $letter-spacing-10;
+  color: $secondary;
+}
+
+.txt_copyright {
+  @include text-style-12;
+  display: block;
+  line-height: $line-height-14;
+  letter-spacing: $letter-spacing-4;
+  color: $tertiary;
+  text-align: center;
+}
+
+.txt_popup {
+  @include text-style-12;
+  letter-spacing: $letter-spacing-8;
+  color: $secondary;
+}
