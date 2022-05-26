@@ -1,2 +1,2 @@
-# play-coupon
-모바일 게임 내에서 webview로 노출되는 쿠폰UI 작업물 repo입니다.
+# play-sealm-coupon-l
+인게임에서 webview로 노출되는 쿠폰영역 작업물(가로 대응)
